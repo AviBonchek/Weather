@@ -8,15 +8,15 @@ const getLocation = async () => {
 
     const latitude = data.latitude;
     const longitude = data.longitude;
-    const countryCapital = data.country_capital;
+    const countryCapital = data.city;
     
-    return { latitude, longitude, countryCapital };
+    return { latitude, longitude, city };
   } catch (error) {
     console.error("Error fetching location:", error.message);
     return {
       latitude: 32.9499,
       longitude: 35.2132,
-      countryCapital: "Jerusalem",
+      city: "Jerusalem",
     };
   }
 };
