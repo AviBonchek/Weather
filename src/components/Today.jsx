@@ -26,7 +26,7 @@ const Today = (props) => {
         </div>
         </div>
         <div className="img-today">
-        <div className="image">
+        {/* <div className="image"> */}
           <img
             className="iag"
             src={`../icons/${isDaytime ? "" : "night-"}${getWeatherPicture(
@@ -34,7 +34,7 @@ const Today = (props) => {
             )}`}
             alt="img-weather"
           />
-        </div>
+        {/* </div> */}
         </div>
       
       </div>

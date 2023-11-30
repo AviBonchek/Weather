@@ -14,7 +14,7 @@ const NextDays = (props) => {
           <h4>{props.date}</h4>
         </div>
       </div>
-      <div className="image">
+      {/* <div className="image"> */}
         <img
         className="iag"
           src={`../icons/${isDaytime ? "" : "night-"}${getWeatherPicture(
@@ -22,7 +22,7 @@ const NextDays = (props) => {
           )}`}
           alt="img-weather"
         />
-      </div>
+      {/* </div> */}
       <div>
         <h5 className="temperature-min">{`${props.temperatureMin}°`}</h5>
         <h5>{`${props.temperatureMax}°`}</h5>
